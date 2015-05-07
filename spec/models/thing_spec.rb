@@ -1,5 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Thing, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it 'should exist' do
+    expect{ Thing }.to_not raise_error
+  end
 end

@@ -19,6 +19,10 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'rspec-rails', '~> 3.0'
+  gem 'guard-rails'
+  gem 'guard-rspec'
+  gem 'guard-bundler'
+  gem 'spring-commands-rspec'
 end
 
 gem 'trailblazer'
