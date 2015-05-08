@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe Thing::Create do
+describe 'Thing::Create' do
   it 'exists' do
     expect{ Thing::Create }.to_not raise_error
   end
