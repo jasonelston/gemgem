@@ -26,3 +26,5 @@ group :development, :test do
 end
 
 gem 'trailblazer'
+gem 'haml-rails'
+gem 'simple_form'
