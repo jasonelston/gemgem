@@ -28,3 +28,6 @@ end
 gem 'trailblazer'
 gem 'haml-rails'
 gem 'simple_form'
+gem 'foundation-rails'
+gem 'cells-haml'
+gem 'rails-timeago'
