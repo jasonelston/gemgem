@@ -1,3 +1,13 @@
+GIT
+  remote: https://github.com/apotonick/rspec-cells.git
+  revision: a473e4552e093479eab200e25a851560ff02188c
+  branch: master
+  specs:
+    rspec-cells (0.2.2)
+      cells (~> 4.0.0.beta)
+      railties (~> 4.2)
+      rspec-rails (~> 3.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -42,6 +52,12 @@ GEM
     builder (3.2.2)
     byebug (4.0.5)
       columnize (= 0.9.0)
+    capybara (2.4.4)
+      mime-types (>= 1.16)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      xpath (~> 2.0)
     cells (4.0.0.beta2)
       actionpack (>= 3.2)
       disposable (~> 0.0.8)
@@ -261,12 +277,15 @@ GEM
       binding_of_caller (>= 0.7.2)
       railties (>= 4.0)
       sprockets-rails (>= 2.0, < 4.0)
+    xpath (2.0.0)
+      nokogiri (~> 1.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   byebug
+  capybara
   cells-haml
   coffee-rails (~> 4.1.0)
   foundation-rails
@@ -279,6 +298,7 @@ DEPENDENCIES
   puma
   rails (= 4.2.1)
   rails-timeago
+  rspec-cells!
   rspec-rails (~> 3.0)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)

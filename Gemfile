@@ -23,6 +23,8 @@ group :development, :test do
   gem 'guard-rspec'
   gem 'guard-bundler'
   gem 'spring-commands-rspec'
+  gem 'capybara'
+  gem 'rspec-cells', git: 'https://github.com/apotonick/rspec-cells.git', branch: 'master'
 end
 
 gem 'trailblazer'
