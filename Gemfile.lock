@@ -8,6 +8,17 @@ GIT
       railties (~> 4.2)
       rspec-rails (~> 3.2)
 
+GIT
+  remote: https://github.com/jasonelston/trailblazer.git
+  revision: 1d037d9a1ae92bcd56d1cf85d6a606250998f1a7
+  branch: cell-autoload
+  specs:
+    trailblazer (0.2.2)
+      actionpack (>= 3.0.0)
+      reform (~> 1.2.0)
+      representable (>= 2.1.1, < 2.2.0)
+      uber (>= 0.0.10)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -259,11 +270,6 @@ GEM
     tilt (1.4.1)
     timers (4.0.1)
       hitimes
-    trailblazer (0.2.2)
-      actionpack (>= 3.0.0)
-      reform (~> 1.2.0)
-      representable (>= 2.1.1, < 2.2.0)
-      uber (>= 0.0.10)
     turbolinks (2.5.3)
       coffee-rails
     tzinfo (1.2.2)
@@ -286,6 +292,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   capybara
+  cells
   cells-haml
   coffee-rails (~> 4.1.0)
   foundation-rails
@@ -306,7 +313,7 @@ DEPENDENCIES
   spring
   spring-commands-rspec
   sqlite3
-  trailblazer
+  trailblazer!
   turbolinks
   uglifier (>= 1.3.0)
   web-console (~> 2.0)

@@ -27,7 +27,8 @@ group :development, :test do
   gem 'rspec-cells', git: 'https://github.com/apotonick/rspec-cells.git', branch: 'master'
 end
 
-gem 'trailblazer'
+gem 'trailblazer', git: 'https://github.com/jasonelston/trailblazer.git', branch: 'cell-autoload'
+gem 'cells'
 gem 'haml-rails'
 gem 'simple_form'
 gem 'foundation-rails'
