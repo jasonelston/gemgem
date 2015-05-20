@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 describe 'Home', type: :feature do
 
   # def document_root_element

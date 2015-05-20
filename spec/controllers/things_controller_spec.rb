@@ -29,7 +29,7 @@ RSpec.describe ThingsController, type: :controller do
     it do # valid
       thing = Thing::Create[thing: { name: 'Some thing' }].model
       get :edit, id: thing.id
-      assert_select("form #thing_name.readonly")
+      assert_select('form #thing_name.readonly')
     end
   end
 end

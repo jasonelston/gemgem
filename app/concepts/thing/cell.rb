@@ -1,3 +1,4 @@
+##
 class Thing::Cell < Cell::Concept
   include ActionView::Helpers::DateHelper
   include Rails::Timeago::Helper

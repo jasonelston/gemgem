@@ -18,13 +18,13 @@ group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
-  gem 'rspec-rails', '~> 3.0'
+  gem 'minitest'
+  gem 'minitest-rails'
+  gem 'minitest-spec-rails'
+  gem 'guard'
   gem 'guard-rails'
-  gem 'guard-rspec'
   gem 'guard-bundler'
-  gem 'spring-commands-rspec'
-  gem 'capybara'
-  gem 'rspec-cells', git: 'https://github.com/apotonick/rspec-cells.git', branch: 'master'
+  gem 'guard-minitest'
 end
 
 gem 'trailblazer', git: 'https://github.com/jasonelston/trailblazer.git', branch: 'cell-autoload'
