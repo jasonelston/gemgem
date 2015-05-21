@@ -2,13 +2,17 @@ require 'test_helper'
 
 ##
 class ThingCellTest < Cell::TestCase
+  controller ThingsController
+
   let(:rails) { Thing::Create[thing: { name: 'Rails' }] }
   let(:trb) { Thing::Create[thing: { name: 'Trailblazer' }] }
 
-  # subject { concept('thing/cell', collection: [trb, rails], last: rails) }
-  subject { concept('thing/cell', rails) }
-
   it do
-    subject.must_have_selector '.columns .header a', text: 'Rails'
+    cell_response = concept('thing/cell', collection: [trb, rails], last: rails)
+    # html = concept('thing/cell', rails.model).(:show)
+    html = Capybara.string(cell_response)
+
+    html.must_have_selector '.columns .header a', text: 'Rails'
+    html.must_have_selector '.columns .header a', text: 'Trailblazer'
   end
 end

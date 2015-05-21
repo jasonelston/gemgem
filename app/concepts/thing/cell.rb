@@ -6,6 +6,7 @@ class Thing::Cell < Cell::Concept
   property :name
   property :created_at
 
+
   def show
     render
   end
@@ -13,7 +14,7 @@ class Thing::Cell < Cell::Concept
   private
 
   def name_link
-    link_to name, thing_path(model)
+    link_to model.name, thing_path(model)
   end
 
   def created_at
@@ -25,4 +26,11 @@ class Thing::Cell < Cell::Concept
     classes << 'end' if options[:last] == model
     classes
   end
+
+  # class Grid < Cell:Concept
+  #   def show
+  #     things = Thing.latest
+  #     concept('thing/cell', collection: things, last: things.last)
+  #   end
+  # end
 end
