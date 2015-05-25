@@ -30,10 +30,11 @@ group :development, :test do
   gem 'guard-minitest'
 end
 
-gem 'trailblazer', git: 'https://github.com/jasonelston/trailblazer.git', branch: 'cell-autoload'
-gem 'cells'
+gem 'trailblazer', git: 'https://github.com/apotonick/trailblazer.git', branch: 'master'
+gem 'cells', git: 'https://github.com/apotonick/cells.git', branch: 'master'
 gem 'haml-rails'
 gem 'simple_form'
 gem 'foundation-rails'
 gem 'cells-haml'
 gem 'rails-timeago'
+gem 'email_validator'

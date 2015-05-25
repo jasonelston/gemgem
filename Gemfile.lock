@@ -1,12 +1,24 @@
 GIT
-  remote: https://github.com/jasonelston/trailblazer.git
-  revision: 1d037d9a1ae92bcd56d1cf85d6a606250998f1a7
-  branch: cell-autoload
+  remote: https://github.com/apotonick/cells.git
+  revision: b1580fce0dd84dcb3d34f0ed158b2ac5b97bc7d7
+  branch: master
+  specs:
+    cells (4.0.0.beta2)
+      actionpack (>= 3.2)
+      capybara
+      disposable (~> 0.0.8)
+      tilt (>= 1.4, < 3)
+      uber (~> 0.0.9)
+
+GIT
+  remote: https://github.com/apotonick/trailblazer.git
+  revision: f3a82365923035c95d27f13287090de36eb8b347
+  branch: master
   specs:
     trailblazer (0.2.2)
       actionpack (>= 3.0.0)
       reform (~> 1.2.0)
-      representable (>= 2.1.1, < 2.2.0)
+      representable (>= 2.1.1, < 2.3.0)
       uber (>= 0.0.10)
 
 GEM
@@ -63,11 +75,6 @@ GEM
     capybara_minitest_spec (1.0.5)
       capybara (>= 2)
       minitest (>= 4)
-    cells (4.0.0.beta2)
-      actionpack (>= 3.2)
-      disposable (~> 0.0.8)
-      tilt (>= 1.4, < 3)
-      uber (~> 0.0.9)
     cells-haml (0.0.1)
       cells (~> 4.0.0.beta)
       haml (~> 4.0)
@@ -86,6 +93,8 @@ GEM
     disposable (0.0.9)
       representable (~> 2.0)
       uber
+    email_validator (1.6.0)
+      activemodel
     erubis (2.7.0)
     execjs (2.5.2)
     ffi (1.9.8)
@@ -215,7 +224,7 @@ GEM
       disposable (~> 0.0.5)
       representable (~> 2.1.0)
       uber (~> 0.0.11)
-    representable (2.1.6)
+    representable (2.1.8)
       multi_json
       nokogiri
       uber (~> 0.0.7)
@@ -273,9 +282,10 @@ PLATFORMS
 DEPENDENCIES
   byebug
   capybara_minitest_spec
-  cells
+  cells!
   cells-haml
   coffee-rails (~> 4.1.0)
+  email_validator
   foundation-rails
   guard
   guard-bundler
